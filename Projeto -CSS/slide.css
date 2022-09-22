@@ -1,0 +1,96 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+
+    position: absolute;
+    overflow: hidden;
+
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    width: 300%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+
+}
+
+.slide{
+    width: 33.33%;
+    transition: 1s;
+}
+
+div.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+
+
+}
+
+input {
+    display: none;
+}
+
+.manualButton {
+    display: inline-block;
+
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    background-color: #fff;
+
+    cursor: pointer;
+}
+
+.manualButton:not(:last-child) {
+    margin-right: 32px;
+}
+
+.manualButton:nth-child(3) {
+    border-radius: 0 50% 50% 0;
+}
+
+.manualButton:nth-child(1) {
+    border-radius:  50% 0 0 50% ;
+}
+
+
+
+/* @media screen and (max-width: 768px)  */
+
+.manualButton:hover {
+    background-color: #3d3d3d;
+    transition: 1s;
+}
+
+#radioButton1:checked~.sInit {
+    margin-left: 0;
+}
+
+#radioButton2:checked~.sInit {
+    margin-left: -33.33%;
+
+}
+
+#radioButton3:checked~.sInit {
+    margin-left: -66.66%;
+
+}

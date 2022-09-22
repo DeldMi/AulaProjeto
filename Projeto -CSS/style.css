@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+#redes > img, #logoArvore{
+    width: 40px;
+    height: 40px;
+}
+
+#logoArvore{
+
+}
+
+header{
+    width: 100%;
+
+
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 15px;
+ 
+
+     align-items: center; /* ou flex-end */
+
+     /* border-bottom: solid 1px #000; */
+}
+
+nav ul {
+    list-style: none;
+}
+
+
+nav ul li {
+    display: inline;
+
+
+    border-top: solid 1px #dbb32e;
+    border-bottom: solid 1px #dbb32e;
+
+    color: #817e00;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li:nth-child(2){
+    margin: 0 16px;
+}
+
+
+
+nav ul li:nth-child(1):hover{
+    
+    background-color: #96ffff;
+}
+nav ul li:nth-child(2):hover{
+    background-color: #7a7aff;
+}
+nav ul li:nth-child(3):hover{
+    background-color: #ff7676;
+}
+
+nav ul li:hover{
+    color: #000000;
+    font-weight: 900;
+    box-shadow: 
+    2px 2px 2px 0px black,
+    2px 2px 5px 1px #ad8100,
+    2px 2px 5px 3px #ad8100,
+    2px 2px 5px 6px #ad8100
+    ;
+
+    border-radius: 10px;
+}
+
+#redes img:nth-child(2){
+    margin-L: 16px;}
